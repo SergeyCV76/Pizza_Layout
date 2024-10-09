@@ -1,0 +1,22 @@
+{
+  "name": "pizza_layout",
+  "version": "0.0.1",
+  "description": "This is a test project for the development of Pizzeria",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergeyCV76/Pizza_Layout.git"
+  },
+  "keywords": [
+    "Pizzeria"
+  ],
+  "author": "Romanov Sergeii",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SergeyCV76/Pizza_Layout/issues"
+  },
+  "homepage": "https://github.com/SergeyCV76/Pizza_Layout#readme"
+}
