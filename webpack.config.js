@@ -4,6 +4,10 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require('path');
 const { Template } = require('webpack');
 
+let fs = require('fs');
+const header = fs.readFileSync(__dirname + '/src/_header.html');
+const footer = fs.readFileSync(__dirname + '/src/_footer.html');
+
 module.exports = {
   entry: './src/js/main.js',
   output: {
@@ -17,8 +21,30 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'src', 'main.html'),
+      filename: 'main.html',
+      template: 'src/main.html',
+      header: header,
+      footer: footer,
     }),
+    new HtmlWebpackPlugin({
+      filename: 'menu.html',
+      template: 'src/menu.html',
+      header: header,
+      footer: footer,
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'order.html',
+      template: 'src/order.html',
+      header: header,
+      footer: footer,
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'info.html',
+      template: 'src/info.html',
+      header: header,
+      footer: footer,
+    }),
+
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css'
     })
