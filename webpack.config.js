@@ -47,7 +47,8 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
-        { from: "src/assets/img", to: "assets/img" },        
+        { from: "src/assets/imgs", to: "assets/imgs" },
+        { from: "src/assets/fonts", to: "assets/fonts" },   
       ],
     }),
     new MiniCssExtractPlugin({

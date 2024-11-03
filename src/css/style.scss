@@ -1,17 +1,48 @@
+$redheader: #ec4d2f;
+$red: #b83922;
+$main: #1d1b2b;
+$white: #ffffff;
 
 @import '../css/header';
+@import '../css/main.scss';
 
-body{
-    background-color: burlywood;
+
+
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     user-select: none;
+    font-family: Montserrat;
+    color: $white;
+    background-color: $main;    
 }
 
-.container{
-    // width: 1600px;
-    height: 100%; 
+.container {
+    // width: 1920px;
+    // height: 100%;
     // margin-left: 50px;
     // margin-right: 50px;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../assets/fonts/Montserrat.woff2) format('woff2');
+    font-weight: 900;    
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url(../assets/fonts/Oswald.woff2) format('woff2');    
+    font-size: 27px;    
+    font-weight: 600;
+    color: white
+}
+
+@font-face {
+    font-family: 'Charm';
+    src: url(../assets/fonts/Charm.woff2) format('woff2');    
+    font-size: 500px;    
+    font-weight: 600;
+    color: $red
 }

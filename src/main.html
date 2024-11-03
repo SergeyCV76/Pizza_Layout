@@ -6,17 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza_Layout</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    
 </head>
 
 <body>
     <div class="container">
         <%= htmlWebpackPlugin.options.header %>
-        <h1>MAIN</h1>    
-        <%= htmlWebpackPlugin.options.footer %>    
+
+            <section class="main">
+                <div class="main-left">
+                    <h1 class="main-name1">Pizza</h1>
+                    <h2 class="main-name2">Special</h2>
+                    <p class="main-title">Lorem ipsum dolor sit amet, consectetur adipisicing.</р>
+                    <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magana aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation.</p>
+                    <ul>
+                        <li><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span></li>
+                        <li><span>Lorem ipsum dolor sit amet, consectetur.</span></li>
+                        <li><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span></li>
+                    </ul>
+                    <button class="main-left-btn">Lorem ipsum</button>
+                </div>
+                <div class="main-right">
+                    <div class="main-carousel">
+                        <div class="main-discount">-10%</div>
+                        <div class="main-carousel-img"></div>
+                    </div>
+                    <div class="main-right-buttom">
+                        <button class="main-right-btn-left"> ❮</button>
+                        <button class="main-right-btn-right"> ❯</button>
+                    </div>
+                </div>
+            </section>
+
+            <%= htmlWebpackPlugin.options.footer %>
     </div>
 </body>
 

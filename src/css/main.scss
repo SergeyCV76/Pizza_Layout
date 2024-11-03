@@ -1,0 +1,155 @@
+$redheader: #ec4d2f;
+$red: #b83922;
+$main: #1d1b2b;
+$white: #ffffff;
+$btn: #3b222b;
+
+.main {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    margin: 0 20%
+}
+
+.main-left,
+.main-right {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    border: solid 1px $white;
+}
+
+.main-right {
+    width: 53%;
+}
+
+.main-name1 {
+    font-size: 240px;
+    font-family: 'Oswald';
+    margin: 0;
+    margin-top: 15px;
+}
+
+.main-name2 {
+    color: $red;
+    font-size: 100px;
+    font-family: 'Charm';
+    margin: -100px 0 27px 220px;
+}
+
+.main-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.main-text {
+    margin-top: 24px;
+    font-size: 17px;
+}
+
+.main-left ul {
+    padding-left: 30px;
+    list-style-type: circle;
+    color: $red;
+}
+
+.main-left ul li {
+    margin: 10px;
+    font-size: 22px;
+    margin-left: -10px;
+
+}
+
+.main-left ul li span {
+    color: $white;
+    font-size: 16px
+}
+
+.main-left-btn {
+    text-transform: uppercase;
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    border: solid 2px $red;
+    border-radius: 15px;
+    color: $white;
+    background-color: $btn;
+    font-size: 20px;
+}
+
+
+.main-carousel {
+    display: block;
+}
+
+.main-discount {
+    display: flex;
+    margin-left: 20px;
+    width: 175px;
+    height: 175px;
+    border: solid 3px $redheader;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Charm';
+    font-size: 46px;
+    color: $red;
+    margin-top: 60px;
+}
+
+.main-carousel-img {
+    display: flex;
+    margin-left: 65px;
+    width: 650px;
+    height: 650px;
+    border: solid 3px $redheader;
+    border-radius: 50%;
+    margin-top: -140px;
+    background-color: $btn;
+}
+
+.main-right-buttom {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 22px;
+    height: 50px;
+    width: 100%;
+    gap: 20px;
+}
+
+.main-right-btn-left,
+.main-right-btn-right {
+    width: 90px;
+    color: $white;
+    background-color: $red;
+    font-size: 27px;
+}
+
+.main-right-btn-left {
+    border-radius: 50px 0px 0px 50px;
+}
+
+.main-right-btn-right {
+    border-radius: 0px 50px 50px 0px;
+}
+
+
+
+@media(max-width:900px) {
+
+    .main {
+        flex-direction: column;
+    }
+
+    .main-left,
+    .main-right {
+        width: calc(100% - 10px);
+        padding-left: 10px;
+    }
+
+
+
+
+}

@@ -21,8 +21,8 @@ header {
     border-radius: 0px 50px 50px 0px;
     background-color: $red;
     border: solid 1px white;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: end;
+    align-items: center;    
 }
 
 .div-header-menu {
@@ -54,15 +54,15 @@ header {
 }
 .div-header-left p{    
     padding-right: 30px;
+    width: 80px;
     font-size: 27px;
     font-family: 'Oswald';
-    font-weight:600;
-    color: white       
+    
 }
 
 .div-header-right img{
     justify-content: space-between;       
-    margin-left: 24px;
+    margin-left: 40px;
     width: 40px;
     height: 40px;
 }
@@ -172,13 +172,10 @@ header {
     .div-header-menu p{
         display: flex;
         width: 100%;
-        justify-content: center;
-        align-content: center;
-        
         font-size: 27px;
-        font-family: 'Oswald';
-        font-weight:600;
-        color: white       
+        justify-content: center;
+        align-content: center;  
+        font-family: Oswald;    
     }
 
     .header-navbar {
