@@ -5,18 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza_Layout</title>
-
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet"> -->
-
 </head>
 
 <body>
     <div class="container">
         <%= htmlWebpackPlugin.options.header %>
-        <h1>INFO</h1>    
-        <%= htmlWebpackPlugin.options.footer %>    
+            <section class="info">
+                <h1 class="info-main">Про нас</h1>
+
+                <iframe class="info-video" src="https://www.youtube.com/embed/B9gYNibVRjY?si=mEdon68hPwGExBi5">
+                </iframe>
+
+                <div class="info-description">
+                    <div class="info-left">
+                        <p>Lorem ipsum:</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates debitis id voluptas!
+                            Unde, nemo! Fuga natus itaque sint quae animi libero quos quasi quo cum maxime distinctio
+                            ducimus adipisci, officiis rem blanditiis at placeat quia! Sequi voluptates optio rerum
+                            quisquam delectus eaque sed laborum in debitis. Ad quasi eum ullam repellendus distinctio,
+                            ut dignissimos obcaecati dolores explicabo perspiciatis vero sunt suscipit harum deleniti
+                            quam fuga quod, soluta, laudantium possimus facere?</p>
+                        <p class="info-italic">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga repellendus repellat corporis
+                            laudantium officia inventore, adipisci debitis voluptatum sequi!</p>
+                        <button class="info-btn">Lorem ipsum</button>
+                    </div>
+                    <div class="info-right">
+                        <p>Lorem ipsum:</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsum laudantium nesciunt maxime perspiciatis quibusdam, atque ipsa deserunt numquam?</li>
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, facere excepturi!</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+            </section>
+
+            <%= htmlWebpackPlugin.options.footer %>
     </div>
 </body>
 
