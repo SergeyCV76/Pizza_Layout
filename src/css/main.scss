@@ -9,6 +9,7 @@ $btn: #3b222b;
     flex-direction: row;
     width: 75%;
     margin: 0 20%
+    // margin: 0 calc(20% + (20 - 1) * ((100vw - 375px) / (1920 - 375)));
 }
 
 .main-left,
@@ -23,7 +24,7 @@ $btn: #3b222b;
 }
 
 .main-name1 {
-    font-size: 240px;
+    font-size: calc(120px + (240 - 120) * ((100vw - 375px) / (1920 - 375)));
     font-family: 'Oswald';
     margin: 0;
     margin-top: 15px;
@@ -31,7 +32,7 @@ $btn: #3b222b;
 
 .main-name2 {
     color: $red;
-    font-size: 100px;
+    font-size: calc(60px + (100 - 60) * ((100vw - 375px) / (1920 - 375)));
     font-family: 'Charm';
     margin: -100px 0 27px 220px;
 }
@@ -140,7 +141,9 @@ $btn: #3b222b;
 
     .main {
         flex-direction: column;
+        // margin: 0 1%
     }
+
 
     .main-left,
     .main-right {
@@ -148,6 +151,12 @@ $btn: #3b222b;
         padding-left: 10px;
     }
 
+    .main-name2 {
+        margin: -100px 0 27px 20px;
+    }
+    .main-name1 {
+        // margin-left: 20px;
+    }
 
 
 

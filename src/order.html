@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza_Layout</title>
-    
+
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet"> -->
@@ -15,8 +15,42 @@
 <body>
     <div class="container">
         <%= htmlWebpackPlugin.options.header %>
-        <h1>ORDER</h1>    
-        <%= htmlWebpackPlugin.options.footer %>    
+            <section class="order">
+                <div class="order-left">
+                    <h1>Ваше замовлення</h1>
+                    <div>
+                        <p>Lorem ipsum:</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum:</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum:</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum:</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    </div>
+
+                    <p class="order-left-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="order-right">
+                    <h2>Lorem ipsum</h2>
+                    <form class="order-form">
+                        <input type="text" value='Lorem ipsum dolor sit amet'>
+                        <input type="text" value='Lorem ipsum dolor sit amet'>
+                        <input type="text" value='Lorem ipsum dolor sit amet'>
+                        <input type="text" value='Lorem ipsum dolor sit amet'>
+                        <button class="order-right-btn">Lorem ipsum</button>
+                    </form>
+                </div>
+            </section>
+            <%= htmlWebpackPlugin.options.footer %>
     </div>
 </body>
 
