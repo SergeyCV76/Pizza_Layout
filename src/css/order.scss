@@ -78,13 +78,20 @@ $btn: #3b222b;
 @media(max-width:1200px) {
 
     .order {
-        flex-direction: column;
+        flex-direction: column;  
+        margin: 0 2%;
+        width: 90%;
+          
     }
 
     .order-left,
     .order-right {
         width: calc(100% - 10px);
         padding-left: 10px;
+    }
+
+    .order input{
+        margin: 10px 10px;
     }
 
 }
